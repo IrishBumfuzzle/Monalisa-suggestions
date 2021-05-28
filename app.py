@@ -4,7 +4,6 @@ import os
 app = Flask(__name__)
 app.config["TEMPLATES_AUTO_RELOAD"] = True
 file_no = 0
-app.config['MAX_CONTENT_LENGHT'] = 16 * 1024* 1024
 app.config['UPLOAD_FOLDER'] = "photos"
 
 @app.route("/", methods=['GET', 'POST'])
