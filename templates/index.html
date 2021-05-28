@@ -7,12 +7,15 @@
 <div style="display: flex; align-items: center; justify-content: center; height: 100%; width: 100%;">
     <h1>Hi! Please enter your suggestions</h1>
 </div>
-<form method="POST">
+<form method="POST" enctype="multipart/form-data">
     <div style="text-align: center;">
         <textarea name="suggestions" rows="25" required></textarea>
+    </div>
+    <div style="text-align: center; padding-top: 5px; padding-bottom: 5px;">
+        Upload image (if any) <input type="file" name="file" multiple accept="image/*">
     </div>
     <div style="text-align: center;">
         <button style="text-align: center;" type="submit" name="submit-button">Submit</button>
     </div>
-    </form>
+</form>
 {% endblock %}
